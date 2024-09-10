@@ -4,6 +4,9 @@ n2 = int(input("digite outro valor: "))
 print("1- Adição 2-subtração 3- multiplicação 4 - divisão ")
 opc = int(input("digite a opção: "))
 
+while opc < 1 or opc > 4:
+    print("digite a opção novamente! ")
+    opc = int(input("digite a opção: "))
 if opc == 1:
     soma = n1 + n2
     print(soma)
